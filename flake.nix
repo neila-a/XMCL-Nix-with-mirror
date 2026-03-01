@@ -2,8 +2,8 @@
   description = "X Minecraft Launcher (XMCL) - A modern Minecraft launcher";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
+    nixpkgs.url = "git+https://mirrors.cernet.edu.cn/nixpkgs.git?ref=master&shallow=1";
+    flake-utils.url = "http://kr2-proxy.gitwarp.top:9980/https://github.com/numtide/flake-utils/archive/refs/heads/main.zip";
   };
 
   outputs =
@@ -68,7 +68,7 @@
           version = xmclVersion;
 
           src = pkgs.fetchurl {
-            url = "https://github.com/Voxelum/x-minecraft-launcher/releases/download/v${xmclVersion}/xmcl-${xmclVersion}-x64.tar.xz";
+            url = "http://kr2-proxy.gitwarp.top:9980/https://github.com/Voxelum/x-minecraft-launcher/releases/download/v${xmclVersion}/xmcl-${xmclVersion}-x64.tar.xz";
             sha256 = sha256;
           };
 
