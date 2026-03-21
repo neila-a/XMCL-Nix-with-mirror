@@ -46,20 +46,20 @@
           pango # Text layout
           udev # Device management
           vulkan-loader # Vulkan support
-          xorg.libX11 # X11 core
-          xorg.libXcomposite # X11 compositing
-          xorg.libXcursor # X11 cursors
-          xorg.libXdamage # X11 damage reporting
-          xorg.libXext # X11 extensions
-          xorg.libXfixes # X11 fixes extension
-          xorg.libXi # X11 input extension
-          xorg.libXrandr # X11 RandR extension (screen config)
-          xorg.libXrender # X11 rendering extension
-          xorg.libXScrnSaver # X11 screen saver extension
-          xorg.libxshmfence # X11 shared memory fences
-          xorg.libXtst # X11 test extension (automation, etc.)
-          xorg.libxcb # X protocol C binding
-          xorg.libXxf86vm # XFree86 Video Mode extension
+          libX11 # X11 core
+          libXcomposite # X11 compositing
+          libXcursor # X11 cursors
+          libXdamage # X11 damage reporting
+          libXext # X11 extensions
+          libXfixes # X11 fixes extension
+          libXi # X11 input extension
+          libXrandr # X11 RandR extension (screen config)
+          libXrender # X11 rendering extension
+          libXScrnSaver # X11 screen saver extension
+          libxshmfence # X11 shared memory fences
+          libXtst # X11 test extension (automation, etc.)
+          libxcb # X protocol C binding
+          libXxf86vm # XFree86 Video Mode extension
         ];
       in
       {
