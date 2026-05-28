@@ -19,7 +19,7 @@
 
         # --- Version ---
         xmclVersion = "0.56.4";
-        sha256 = "41fd0b934385a182b587867b66f3fc3aeb2fe5bf66218635900030fcf17999f8";
+        sha256 = "sha256-YpSK7qtCRhGENcmzp6+jgmYelenL5raBAGFmnl0s6Fs=";
 
         # --- Dependencies ---
         runtimeDeps = with pkgs; [
