@@ -18,8 +18,8 @@
         pkgs = nixpkgs.legacyPackages.${system};
 
         # --- Version ---
-        xmclVersion = "0.54.4";
-        sha256 = "547fd1b91449c660fcb7716215e5e2448cb0e821ae78c6a042aa72793c29d27b";
+        xmclVersion = "0.56.4";
+        sha256 = "41fd0b934385a182b587867b66f3fc3aeb2fe5bf66218635900030fcf17999f8";
 
         # --- Dependencies ---
         runtimeDeps = with pkgs; [
@@ -68,7 +68,7 @@
           version = xmclVersion;
 
           src = pkgs.fetchurl {
-            url = "http://kr2-proxy.gitwarp.top:9980/https://github.com/Voxelum/x-minecraft-launcher/releases/download/v${xmclVersion}/xmcl-${xmclVersion}-x64.tar.xz";
+            url = "http://kr2-proxy.gitwarp.top:9980/https://github.com/Voxelum/x-minecraft-launcher/releases/download/v${xmclVersion}/xmcl-${xmclVersion}-x86_64.tar.xz";
             sha256 = sha256;
           };
 
