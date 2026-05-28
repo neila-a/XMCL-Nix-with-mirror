@@ -68,7 +68,7 @@
           version = xmclVersion;
 
           src = pkgs.fetchurl {
-            url = "http://kr2-proxy.gitwarp.top:9980/https://github.com/Voxelum/x-minecraft-launcher/releases/download/v${xmclVersion}/xmcl-${xmclVersion}-x86_64.tar.xz";
+            url = "http://kr2-proxy.gitwarp.top:9980/https://github.com/Voxelum/x-minecraft-launcher/releases/download/v${xmclVersion}/xmcl-${xmclVersion}-x64.tar.xz";
             sha256 = sha256;
           };
 
