@@ -17,10 +17,10 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1774045235,
-        "narHash": "sha256-XO+8quEceug8hNuzQul2wBxUWsx9nFg5ouNyUL38yaA=",
+        "lastModified": 1780686478,
+        "narHash": "sha256-zLfvU5+FhNZVpdpAdCToKbxvJMtGWPOw1xfjkV45od0=",
         "ref": "master",
-        "rev": "185a49bfa3d6315fead10b550fb0ea9c5911efa5",
+        "rev": "891eaa77f0eed53352194677991bd30978f9b0ad",
         "shallow": true,
         "type": "git",
         "url": "https://mirrors.cernet.edu.cn/nixpkgs.git"
