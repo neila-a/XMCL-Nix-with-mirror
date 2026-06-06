@@ -21,7 +21,7 @@
                 xmclVersion = "0.56.4";
             in
             {
-                packages.xmcl = pkgs.stdenv.mkDerivation {
+                packages.xmcl = pkgs.stdenv.mkDerivation rec {
                     pname = "xmcl";
                     version = xmclVersion;
 
@@ -84,6 +84,7 @@
                         cp -r ./resources/app.asar $out/opt/xmcl
                         makeWrapper ${pkgs.lib.getExe pkgs.electron} $out/bin/xmcl \
                             --argv0 "xmcl" \
+                            --prefix LD_LIBRARY_PATH : ${pkgs.lib.makeLibraryPath buildInputs} \
                             --add-flags "$out/opt/xmcl/app.asar" \
                             --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--ozone-platform-hint=auto --enable-features=WaylandWindowDecorations --enable-wayland-ime=true}}" \
                             --set-default ELECTRON_FORCE_IS_PACKAGED 1 \
